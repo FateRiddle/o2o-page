@@ -3,6 +3,8 @@ import axios from 'axios'
 //constant
 const API_ROOT = 'http://61.164.47.179:8480/o2oshop-service/'
 
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+
 //when refresh,seems to need reset it
 // const token = window.localStorage.getItem('token')
 // axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
@@ -26,16 +28,32 @@ const ax = {
   del: url => request.delete(url).then(responseOutput),
   get: url => request.get(url).then(responseBody),
   put: (url, body) => request.put(url, body).then(responseOutput),
-  post: (url, body) => request.post(url, body).then(responseOutput), //o2o所有的接口都用post方法
+  post: (url, body) => request.post(url, body), //o2o所有的接口都用post方法
 }
 
 const Home = {
   getCoupon: () =>
     ax.post('otofavourinfo/findAll', {
-      req_head:
-        "{sign: 'cbb40c9c9a8d7248ab191b0215fa4f05',timestamp: '1502423540028',app_key: '12345678',version: '1.0',platform: 'pc',partner_id: '0',}",
-      req_data:
-        "{groupId: 1,partnerId: 1,storeId: 1,page: 0,rows: 10,direction: 'DESC',favourName: '100',sort: 'store_id',favourType: 'MJ',orgaId: 1,}",
+      req_head: {
+        sign: 'cbb40c9c9a8d7248ab191b0215fa4f05',
+        timestamp: '1502423540028',
+        app_key: '12345678',
+        version: '1.0',
+        platform: 'pc',
+        partner_id: '0',
+      },
+      req_data: {
+        groupId: 1,
+        partnerId: 1,
+        storeId: 1,
+        page: 0,
+        rows: 10,
+        direction: 'DESC',
+        favourName: '100',
+        sort: 'store_id',
+        favourType: 'MJ',
+        orgaId: 1,
+      },
     }),
 }
 

@@ -1,13 +1,18 @@
 <template>
-  <div id="app">
+  <div id="app" class="">
     <img src="./assets/logo.png">
     <router-view></router-view>
+    <tabs></tabs>
   </div>
 </template>
 
 <script>
+import Tabs from './components/Tabs.vue'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Tabs,
+  },
 }
 </script>
 
