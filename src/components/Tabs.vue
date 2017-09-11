@@ -16,7 +16,7 @@ export default {
     tabs: [
       { path: '/', text: '首页' },
       { path: '/products', text: '商品' },
-      { path: '/space', text: '空间' },
+      { path: '/spaces', text: '空间' },
       { path: '/person', text: '个人' },
     ],
   }),

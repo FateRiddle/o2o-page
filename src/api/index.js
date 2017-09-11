@@ -52,7 +52,6 @@ const Home = {
       page: 0,
       rows: 10,
       direction: 'DESC',
-      favourName: '100',
       sort: 'store_id',
       favourType: 'MJ',
       orgaId: 1,
@@ -115,15 +114,19 @@ const Home = {
 
 const Products = {
   getProducts: () =>
-    ax.post('otogoodsinfo/findAll', {
-      groupId: 1,
-      goodsName: ' ',
-      storeId: 1,
-      page: 0,
-      rows: 10,
-      direction: 'DESC',
-      sort: 'createTime',
-    }),
+    ax
+      .post('otogoodsinfo/findAll', {
+        groupId: 1,
+        storeId: 1,
+        page: 0,
+        rows: 100,
+        direction: 'DESC',
+      })
+      .then(res => {
+        if (res.res_msg.code === '0') {
+          return res.res_data.content
+        }
+      }),
 }
 
 // const Auth = {
