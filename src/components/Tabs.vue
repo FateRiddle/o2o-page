@@ -1,6 +1,6 @@
 <template>
   <div id="tabs">
-    <ul class="list flex pl0 justify-around pa3 bg-black white">
+    <ul class="list flex pl0 justify-around pa3 bg-black">
       <li class="" v-for="tab in tabs">
         <router-link class="white no-underline" :to='tab.path'>
           {{tab.text}}
@@ -15,7 +15,7 @@ export default {
   data: () => ({
     tabs: [
       { path: '/', text: '首页' },
-      { path: '/product', text: '商品' },
+      { path: '/products', text: '商品' },
       { path: '/space', text: '空间' },
       { path: '/person', text: '个人' },
     ],

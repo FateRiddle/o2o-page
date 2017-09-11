@@ -1,6 +1,6 @@
 <template>
   <div id="space">
-    space
+    space2
   </div>
 </template>
 <script>

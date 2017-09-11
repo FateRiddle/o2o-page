@@ -1,6 +1,5 @@
 <template>
-  <div id="app" class="">
-    <img src="./assets/logo.png">
+  <div id="app" class="vh-100 flex flex-column justify-between debug">
     <router-view></router-view>
     <tabs></tabs>
   </div>
@@ -17,12 +16,9 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
 }
 </style>

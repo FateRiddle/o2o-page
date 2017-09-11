@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <div @click='getCoupon'>
-      test
+      test2 for you
     </div>
   </div>
 </template>

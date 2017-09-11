@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Person from '@/components/Person'
-import Product from '@/components/Product'
+import Products from '@/components/Products'
 import Space from '@/components/Space'
 import Shop from '@/components/Shop'
 
@@ -21,9 +21,9 @@ export default new Router({
       component: Person,
     },
     {
-      path: '/product',
-      name: 'Product',
-      component: Product,
+      path: '/products',
+      name: 'Products',
+      component: Products,
     },
     {
       path: '/space',
