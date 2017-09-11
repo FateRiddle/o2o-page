@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="vh-100 flex flex-column justify-between debug">
+  <div id="app" class="vh-100 flex flex-column justify-between">
     <router-view></router-view>
     <tabs></tabs>
   </div>

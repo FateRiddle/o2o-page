@@ -1,4 +1,5 @@
 //Imports on top
+import api from '@/api'
 
 const state = {
   // Initial state of your store
@@ -14,6 +15,7 @@ const actions = {
 }
 
 const mutations = {
+  GET_PRODUCTS() {},
   // Synchronous modifications of  your store
 }
 

@@ -1,0 +1,53 @@
+{
+  "store": {
+    "address": "滨江江南大道1091号（滨江分店）",
+    "distance": "距离5公里"
+  },
+  "discounts": {
+    "discount": [
+      {
+        "icon": "icon-shouc",
+        "discountState": "点击领取",
+        "discountDisc": "满减券",
+        "discountText": "满1000减100",
+        "discountLimit": "限卫浴类",
+        "discountTime": "2017.06.22-2017.06.25"
+      },
+      {
+        "icon": "icon-shouc",
+        "discountState": "已经领取",
+        "discountDisc": "满减券",
+        "discountText": "满1000减100",
+        "discountLimit": "限卫浴类",
+        "discountTime": "2017.06.22-2017.06.25"
+      }
+    ]
+  },
+  "spaces": {
+    "space": [
+      {
+        "url": "/static/img/dianpubanner.8b98d1d.png",
+        "spaceTitle": "现代简约.都市青年",
+        "spaceKyWord": "现代简约",
+        "spaceKyWord1": "厨房/卫生间/客厅",
+        "price": "￥8888",
+        "priceIntroduce": "现代风格现代风格现代风格现代风格现代风格现代风格现代风格现代风格现代风格现代风格现代风格",
+        "icon": "icon-liulanliang",
+        "favoriteNum": "123436",
+        "checkNum": "456441"
+    },
+      {
+        "url": "/static/img/dianpubanner.8b98d1d.png",
+        "spaceTitle": "现代简约。都市青年",
+        "spaceKyWord": "现代简约",
+        "spaceKyWord1": "厨房/卫生间/客厅",
+        "price": "￥8888",
+        "priceIntroduce": "现代风格现代风格现代风格现代风格现代风格现代风格现代风格现代风格现代风格现代风格现代风格",
+        "icon": "icon-liulanliang",
+        "favoriteNum": "123436",
+        "checkNum": "456441"
+      }
+
+    ]
+  }
+}

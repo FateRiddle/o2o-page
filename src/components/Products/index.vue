@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import Product from './product.vue'
+import Product from './Product.vue'
 import api from '@/api'
 export default {
   name: 'products',
